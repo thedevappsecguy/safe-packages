@@ -21,10 +21,8 @@
                 "pypi"
             ],
             "matchPackageNames": [
-                "pytest"
-            ],
-            "matchPackagePatterns": [
-                "^pytest-"
+                "pytest",
+                "/^pytest-/"
             ]
         },
         {
