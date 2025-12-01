@@ -6,7 +6,7 @@
     ],
     "minimumReleaseAge": "7 days",
     "ignorePaths": [
-        "**/fixtures/**"
+        "**/tests/**"
     ],
     "lockFileMaintenance": {
         "enabled": true,
