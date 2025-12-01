@@ -5,6 +5,9 @@
         "schedule:weekly"
     ],
     "minimumReleaseAge": "7 days",
+    "ignorePaths": [
+        "**/fixtures/**"
+    ],
     "lockFileMaintenance": {
         "enabled": true,
         "schedule": [
