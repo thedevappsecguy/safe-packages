@@ -9,7 +9,7 @@
     <PackageReference Include="Serilog" Version="2.10.0" />
     <PackageReference Include="DNN.PLATFORM" Version="9.14.0" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.36" />
-    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.36" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.8" />
   </ItemGroup>
 
 </Project>
