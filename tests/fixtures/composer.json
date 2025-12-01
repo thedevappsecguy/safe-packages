@@ -1,0 +1,8 @@
+{
+    "require": {
+        "php": ">=7.2",
+        "monolog/monolog": "2.2.0",
+        "redaxo/source": "1.10.0",
+        "typo3/cms-core": "12.4.17"
+    }
+}

@@ -1,0 +1,85 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state"
+    ],
+    "content-hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "packages": [
+        {
+            "name": "monolog/monolog",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "1cb1cde8e8dd0f70cc0fe51d6c0436d376d9e388"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1cb1cde8e8dd0f70cc0fe51d6c0436d376d9e388",
+                "reference": "1cb1cde8e8dd0f70cc0fe51d6c0436d376d9e388",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "psr/log": "^1.0.1"
+            },
+            "type": "library"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "phpunit/phpunit",
+            "version": "9.5.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/phpunit.git",
+                "reference": "c73c6737305e779771147af66c96ca6a7ed8a741"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c73c6737305e779771147af66c96ca6a7ed8a741",
+                "reference": "c73c6737305e779771147af66c96ca6a7ed8a741",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/instantiator": "^1.3.1",
+                "ext-dom": "*",
+                "ext-json": "*",
+                "ext-libxml": "*",
+                "ext-mbstring": "*",
+                "ext-xml": "*",
+                "ext-xmlwriter": "*",
+                "myclabs/deep-copy": "^1.10.1",
+                "phar-io/manifest": "^2.0.1",
+                "phar-io/version": "^3.0.0",
+                "php": ">=7.3",
+                "phpspec/prophecy": "^1.12.1",
+                "phpunit/php-code-coverage": "^9.2.3",
+                "phpunit/php-file-iterator": "^3.0.5",
+                "phpunit/php-invoker": "^3.1.1",
+                "phpunit/php-text-template": "^2.0.3",
+                "phpunit/php-timer": "^5.0.0",
+                "sebastian/cli-parser": "^1.0.1",
+                "sebastian/code-unit": "^1.0.6",
+                "sebastian/comparator": "^4.0.5",
+                "sebastian/diff": "^4.0.3",
+                "sebastian/environment": "^5.1.3",
+                "sebastian/exporter": "^4.0.3",
+                "sebastian/global-state": "^5.0.1",
+                "sebastian/object-enumerator": "^4.0.3",
+                "sebastian/resource-operations": "^3.0.3",
+                "sebastian/type": "^2.3",
+                "sebastian/version": "^3.0.2"
+            },
+            "type": "library"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^7.3|^8.0"
+    },
+    "platform-dev": []
+}

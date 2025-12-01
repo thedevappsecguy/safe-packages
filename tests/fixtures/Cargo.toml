@@ -1,0 +1,10 @@
+[package]
+name = "test-rust"
+version = "0.1.0"
+
+[dependencies]
+maxminddb = "0.5.0"
+libheif-rs = "0.30.0"
+
+[dev-dependencies]
+thread-amount = "*"

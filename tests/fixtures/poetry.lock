@@ -1,0 +1,39 @@
+[[package]]
+name = "flask"
+version = "2.0.1"
+description = "A simple framework for building complex web applications."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
+name = "hooktest2"
+version = "0.0.0"
+description = "Malicious package"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "hooktest"
+version = "0.0.0"
+description = "Malicious package"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "colorama-0.4.3-to-0.4.6-vulnerability"
+version = "0.0.0"
+description = "Malicious package"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "pytest"
+version = "6.2.4"
+description = "pytest: simple powerful testing with Python"
+category = "dev"
+optional = false
+python-versions = ">=3.6"

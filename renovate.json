@@ -1,0 +1,73 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "config:best-practices",
+        "schedule:weekly"
+    ],
+    "minimumReleaseAge": "7 days",
+    "lockFileMaintenance": {
+        "enabled": true,
+        "schedule": [
+            "before 5am on monday"
+        ]
+    },
+    "packageRules": [
+        {
+            "groupName": "Testing Framework",
+            "matchDatasources": [
+                "pypi"
+            ],
+            "matchPackageNames": [
+                "pytest"
+            ],
+            "matchPackagePatterns": [
+                "^pytest-"
+            ]
+{
+                "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+                "extends": [
+                    "config:best-practices",
+                    "schedule:weekly"
+                ],
+                "minimumReleaseAge": "7 days",
+                "lockFileMaintenance": {
+                    "enabled": true,
+                    "schedule": [
+                        "before 5am on monday"
+                    ]
+                },
+                "packageRules": [
+                    {
+                        "groupName": "Testing Framework",
+                        "matchDatasources": [
+                            "pypi"
+                        ],
+                        "matchPackageNames": [
+                            "pytest"
+                        ],
+                        "matchPackagePatterns": [
+                            "^pytest-"
+                        ]
+                    },
+                    {
+                        "groupName": "Type Checking & Validation",
+                        "matchDatasources": [
+                            "pypi"
+                        ],
+                        "matchPackageNames": [
+                            "pydantic",
+                            "pydantic-core"
+                        ]
+                    },
+                    {
+                        "groupName": "Dev Tools",
+                        "matchDatasources": [
+                            "pypi"
+                        ],
+                        "matchPackageNames": [
+                            "ruff",
+                            "poethepoet"
+                        ]
+                    }
+                ]
+            }

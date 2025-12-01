@@ -1,0 +1,10 @@
+github.com/gin-gonic/gin v1.7.2 h1:1234567890abcdef
+github.com/gin-gonic/gin v1.7.2/go.mod h1:abcdef1234567890
+github.com/VictoriaMetrics/VictoriaMetrics v1.99.0 h1:1234567890abcdef
+github.com/VictoriaMetrics/VictoriaMetrics v1.99.0/go.mod h1:abcdef1234567890
+github.com/usememos/memos v0.22.0 h1:1234567890abcdef
+github.com/usememos/memos v0.22.0/go.mod h1:abcdef1234567890
+github.com/answerdev/answer v1.4.0 h1:1234567890abcdef
+github.com/answerdev/answer v1.4.0/go.mod h1:abcdef1234567890
+github.com/stretchr/testify v1.7.0 h1:nwc3DEeQq4Jza4558u9M6+94/u+5e46555555555555=
+github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcqiFPLM8m7yW7I+yImegDeaQe/d1LNlW6yX10=

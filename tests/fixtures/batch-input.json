@@ -1,0 +1,34 @@
+[
+    {
+        "name": "com.unity.xr.visionos",
+        "ecosystem": "npm"
+    },
+    {
+        "name": "mlx",
+        "ecosystem": "PyPI"
+    },
+    {
+        "name": "github.com/grafana/grafana",
+        "ecosystem": "Go"
+    },
+    {
+        "name": "thread-amount",
+        "ecosystem": "crates.io"
+    },
+    {
+        "name": "prosemirror_to_html",
+        "ecosystem": "RubyGems"
+    },
+    {
+        "name": "org.apache.causeway.core:causeway-core",
+        "ecosystem": "Maven"
+    },
+    {
+        "name": "snipe/snipe-it",
+        "ecosystem": "Packagist"
+    },
+    {
+        "name": "DNN.PLATFORM",
+        "ecosystem": "NuGet"
+    }
+]
