@@ -3,7 +3,7 @@
     "extends": [
         "config:best-practices",
         "helpers:pinGitHubActionDigests",
-        "disableDependencyDashboard",
+        ":disableDependencyDashboard",
         "schedule:weekly"
     ],
     "minimumReleaseAge": "7 days",
