@@ -8,7 +8,17 @@ requires-python = ">=3.12"
 authors = [
   { name = "thedevappsecguy" },
 ]
-keywords = ["security", "vulnerability", "scanner", "osv", "dependencies", "cli"]
+keywords = [
+    "python",
+    "security",
+    "security-tools",
+    "security-automation",
+    "security-scan",
+    "supply-chain-security",
+    "dependencies",
+    "osv",
+    "cli",
+]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Environment :: Console",
