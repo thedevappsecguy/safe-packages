@@ -1,6 +1,6 @@
 [project]
 name = "safe-packages"
-version = "0.1.0"
+
 description = "The cli tool for checking the security of the packages."
 readme = "README.md"
 license = { file = "LICENSE" }
@@ -29,14 +29,21 @@ dependencies = [
     "rich>=14.2.0",
     "typer>=0.20.0",
 ]
+dynamic = ["version"]
 
 [project.urls]
 Repository = "https://github.com/thedevappsecguy/safe-packages"
 Issues = "https://github.com/thedevappsecguy/safe-packages/issues"
+Homepage = "https://github.com/thedevappsecguy/safe-packages"
+Documentation = "https://github.com/thedevappsecguy/safe-packages#readme"
+security = "https://github.com/thedevappsecguy/safe-packages/security/policy"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "src/safepackages/__init__.py"
 
 [tool.uv]
 package = true
@@ -51,6 +58,13 @@ dev = [
     "ruff>=0.14.7",
 ]
 
+[tool.pytest.ini_options]
+addopts = "--cov=safepackages --cov-report=term-missing"
+
+[tool.coverage.report]
+fail_under = 70
+show_missing = true
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/safepackages"]
 exclude = ["src/safepackages/fixtures"]
@@ -59,6 +73,9 @@ exclude = ["src/safepackages/fixtures"]
 exclude = [
   "/tests",
   "/tasks",
+  "/.github",
+  "/renovate.json",
+  "/uv.lock",
 ]
 
 [project.scripts]
