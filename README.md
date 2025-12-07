@@ -1,4 +1,5 @@
 # SafePackages
+[![CodeQL](https://github.com/thedevappsecguy/safe-packages/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/thedevappsecguy/safe-packages/actions/workflows/github-code-scanning/codeql) [![CI](https://github.com/thedevappsecguy/safe-packages/actions/workflows/ci.yml/badge.svg)](https://github.com/thedevappsecguy/safe-packages/actions/workflows/ci.yml) [![Publish to PyPI](https://github.com/thedevappsecguy/safe-packages/actions/workflows/release.yml/badge.svg)](https://github.com/thedevappsecguy/safe-packages/actions/workflows/release.yml) [![Publish to TestPyPI](https://github.com/thedevappsecguy/safe-packages/actions/workflows/publish-testpypi.yml/badge.svg)](https://github.com/thedevappsecguy/safe-packages/actions/workflows/publish-testpypi.yml)
 
 **SafePackages** is a powerful Python CLI tool designed to scan your project's dependencies for known vulnerabilities. It leverages the [OSV (Open Source Vulnerabilities)](https://osv.dev/) database to provide accurate and up-to-date security information for a wide range of ecosystems.
 
