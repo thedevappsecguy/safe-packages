@@ -1,6 +1,6 @@
 from typing import List, Optional, Dict, Any
 from enum import Enum
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 from datetime import datetime
 
 try:
@@ -53,6 +53,31 @@ class OsvPackage(BaseModel):
     name: str = Field(..., description="Name of the package")
     ecosystem: str = Field(..., description="The ecosystem for this package")
     purl: Optional[str] = Field(None, description="The package URL for this package")
+
+    @field_validator("ecosystem")
+    @classmethod
+    def validate_ecosystem(cls, v: str) -> str:
+        """
+        Normalize ecosystem casing.
+        """
+        # Map of lowercase -> correct case
+        mapping = {
+            "pypi": "PyPI",
+            "npm": "npm",
+            "maven": "Maven",
+            "nuget": "NuGet",
+            "packagist": "Packagist",
+            "rubygems": "RubyGems",
+            "go": "Go",
+            "crates.io": "crates.io",
+            "hex": "hex",
+            "pub": "pub",
+            "alpine": "Alpine",
+            "android": "Android",
+            "linux": "Linux",
+            "oss-fuzz": "OSS-Fuzz",
+        }
+        return mapping.get(v.lower(), v)
 
 
 class OsvEvent(BaseModel):
