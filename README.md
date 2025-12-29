@@ -138,7 +138,7 @@ SafePackages prioritizes security and reliability through several modern practic
 *   **Supply Chain Security**:
     *   **Immutable Releases**: immutability, adding a new layer of supply chain security. With immutable releases, assets and tags are protected from tampering after publication.
     *   **Trusted Publishing**: Uses PyPI's [Trusted Publishing](https://docs.pypi.org/trusted-publishers/) model, eliminating long-lived secrets.
-    *   **Build Provenance**: All releases include [SLSA](https://slsa.dev/) build provenance attestations, signed by GitHub's certificate authority. You can [verify these attestations](https://docs.github.com/en/actions/how-tos/secure-your-work/use-artifact-attestations/use-artifact-attestations#verifying-an-artifact-attestation-for-binaries) to confirm artifacts were built in the authenticated CI environment:
+    *   **Build Provenance**: All releases include [SLSA](https://slsa.dev/) build provenance attestations, signed by **Sigstore's Public Good instance CA** and recorded on the **Rekor** public transparency log. You can [verify these attestations](https://docs.github.com/en/actions/how-tos/secure-your-work/use-artifact-attestations/use-artifact-attestations#verifying-an-artifact-attestation-for-binaries) to confirm artifacts were built in the authenticated CI environment and have not been tampered with:
         1. Download the artifact (e.g., from PyPI):
            ```bash
            pip download safe-packages --no-deps
