@@ -127,6 +127,27 @@ safepackages batch '[{"name":"django","version":"3.0.0","ecosystem":"PyPI"}]'
 safepackages batch packages.json
 ```
 
+## Security
+
+SafePackages prioritizes security and reliability through several modern practices:
+
+*   **Pydantic for Data Validation**: extensive use of [Pydantic](https://docs.pydantic.dev/) ensures robust data parsing and validation, preventing many common injection and data integrity issues.
+*   **Automated Security Scans**:
+    *   **CodeQL**: [GitHub's CodeQL](https://codeql.github.com/) static analysis engine scans every commit for vulnerabilities.
+    *   **Zizmor**: [zizmor](https://github.com/woodruffw/zizmor) is used to statically analyze GitHub Actions workflows for security misconfigurations.
+*   **Supply Chain Security**:
+    *   **Immutable Releases**: immutability, adding a new layer of supply chain security. With immutable releases, assets and tags are protected from tampering after publication.
+    *   **Trusted Publishing**: Uses PyPI's [Trusted Publishing](https://docs.pypi.org/trusted-publishers/) model, eliminating long-lived secrets.
+    *   **Build Provenance**: All releases include [SLSA](https://slsa.dev/) build provenance attestations, signed by GitHub's certificate authority. You can [verify these attestations](https://docs.github.com/en/actions/how-tos/secure-your-work/use-artifact-attestations/use-artifact-attestations#verifying-an-artifact-attestation-for-binaries) to confirm artifacts were built in the authenticated CI environment:
+        1. Download the artifact (e.g., from PyPI):
+           ```bash
+           pip download safe-packages --no-deps
+           ```
+        2. Verify the attestation:
+           ```bash
+           gh attestation verify PATH/TO/BUILD/ARTIFACT-BINARY -R thedevappsecguy/safe-packages
+           ```
+
 ## Development
 
 We use `uv` and `poethepoet` for development.
