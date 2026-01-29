@@ -3,6 +3,7 @@
     "extends": [
         "config:best-practices",
         "helpers:pinGitHubActionDigests",
+        "helpers:pinGitHubActionDigestsToSemver",
         ":disableDependencyDashboard",
         "schedule:weekly"
     ],
